@@ -1,0 +1,65 @@
+@use '../abstracts' as *;
+
+.banner{
+  display: flex;
+  padding: 2vw 8vw 0vw 9vw;
+}
+
+.call-to-action{
+  padding-right: 6vw;
+  padding-top: 6vh;
+
+  
+  & > h2{
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  & > p{
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 3vh 0vh 3vh 0vh;
+  }
+
+}
+
+.btn{
+  width: 185px;
+  height: 38px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: $title;
+}
+
+.services-btn{
+  color: $primary;
+  background-color: $accent-color;
+  border: 2px solid transparent;
+  transition-duration: 0.8s;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $primary;
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.follow-btn{
+  border: 2px solid $secondary;
+  background-color: $primary;
+  color: $secondary;
+  margin-left: 2vw;
+  transition-duration: 0.8s;
+
+  &:hover{
+    cursor: pointer;
+    background-color: $secondary;
+    border-color: none;
+    color: $primary;
+  }
+}
+
+
+

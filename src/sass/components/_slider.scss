@@ -5,13 +5,13 @@
   height: 62vh;
   border-radius: 8px;
   overflow: hidden;
- }
+}
  
  .slides{
   display: flex;
   width: 400%;
   height: 64vh;
- 
+
   & input{
     display: none;
   }
@@ -90,7 +90,6 @@
 
 #radio1:checked ~ .first{
   margin-left: 0;
-  transition-duration: 0s;
 }
 
 #radio2:checked ~ .first{
@@ -105,10 +104,22 @@
   margin-left: -75%;
 }
  
-@media(max-width: 999px){
-   .slider,
-   .slides,
-   .manual-navigation{
+@media(max-width: $tablet-landscape){
+   .slider{
     display: none;
   }  
+}
+
+@media(min-width: $tablet-landscape) and (max-width: $desktop){
+  .slider{
+    height: 46vh;
+  }
+
+  .navigation-auto{
+    margin-top: 54vh;
+  }
+
+  .manual-navigation{
+    margin-top: -10vh;
+  }
 }

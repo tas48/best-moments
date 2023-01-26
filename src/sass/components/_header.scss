@@ -61,5 +61,38 @@
   }
 }
 
+@media(max-width: $mobile){
+  .follow-btn{
+    display: none;
+  }
+}
 
+@media(max-width: $tablet-landscape){
+  .call-to-action{
+    display: block;
+    text-align: center;
+    padding: 6vw 4vw 0vw 4vw;
+  }
+}
+
+@media(min-width: $tablet-landscape ) and (max-width: $desktop){
+  .follow-btn{
+    display: none;
+  }
+
+  .call-to-action{
+    
+    & > h2{
+      font-size: 32px;
+    }
+
+    & > p{
+      padding: 2vh 0vh 2vh 0vh;
+    }
+
+    & > div{
+      text-align: center;  
+    }
+  }  
+}
 

@@ -62,7 +62,7 @@ nav{
   cursor: pointer;
 
   & div{
-    width: 26px;
+    width: 24px;
     height: 3px;
     border-radius: 50px;
     background-color: $secondary;
@@ -71,11 +71,31 @@ nav{
   }
 }
 
-@media(max-width: $tablet-landscape){
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-list.active{
+  transform: translateX(0);
+}
+
+@media(max-width: $mobile){
    
-  body{
-    overflow-x: hidden;
-    
+  body, 
+  html{
+    overflow: hidden; 
+  }
+
+  .logo{
+    max-width: 138px;
   }
 
   .nav-list{
@@ -85,7 +105,7 @@ nav{
     width: 180px;
     height: 340px;
     background-color: $secondary;
-    border-radius: 8px;
+    border-radius: 6px;
     flex-direction: column;
     align-items: flex-start;
     transform: translateX(100%);
@@ -111,18 +131,17 @@ nav{
   }
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+@media (min-width: $mobile) and (max-width: 1000px){
+
+  .whats-btn{
+    display: none;
+  }
+  
+  .link{
+    font-size: 0.8rem;
   }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  .logo{
+    max-width: 136px;
   }
-}
-
-.nav-list.active{
-  transform: translateX(0);
 }

@@ -69,7 +69,7 @@ nav .nav-list li {
   cursor: pointer;
 }
 .mobile-menu div {
-  width: 26px;
+  width: 24px;
   height: 3px;
   border-radius: 50px;
   background-color: #688aa5;
@@ -77,9 +77,27 @@ nav .nav-list li {
   transition: 0.5s;
 }
 
-@media (max-width: 900px) {
-  body {
-    overflow-x: hidden;
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 599px) {
+  body,
+  html {
+    overflow: hidden;
+  }
+  .logo {
+    max-width: 138px;
   }
   .nav-list {
     position: fixed;
@@ -88,7 +106,7 @@ nav .nav-list li {
     width: 180px;
     height: 340px;
     background-color: #688aa5;
-    border-radius: 8px;
+    border-radius: 6px;
     flex-direction: column;
     align-items: flex-start;
     transform: translateX(100%);
@@ -109,20 +127,17 @@ nav .nav-list li {
     display: none;
   }
 }
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+@media (min-width: 599px) and (max-width: 1000px) {
+  .whats-btn {
+    display: none;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  .link {
+    font-size: 0.8rem;
+  }
+  .logo {
+    max-width: 136px;
   }
 }
-.nav-list.active {
-  transform: translateX(0);
-}
-
 .banner {
   display: flex;
   padding: 2vw 8vw 0vw 9vw;
@@ -179,6 +194,12 @@ nav .nav-list li {
 }
 
 @media (max-width: 599px) {
+  .call-to-action h2 {
+    font-size: 2.2rem;
+  }
+  .call-to-actionp {
+    font-size: 0.8rem;
+  }
   .follow-btn {
     display: none;
   }
@@ -195,7 +216,10 @@ nav .nav-list li {
     display: none;
   }
   .call-to-action > h2 {
-    font-size: 32px;
+    font-size: 1.8rem;
+  }
+  .call-to-action > p {
+    font-size: 0.8rem;
   }
   .call-to-action > p {
     padding: 2vh 0vh 2vh 0vh;
@@ -207,7 +231,7 @@ nav .nav-list li {
 .slider {
   width: 42vw;
   height: 62vh;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -309,13 +333,13 @@ nav .nav-list li {
 }
 @media (min-width: 900px) and (max-width: 1200px) {
   .slider {
-    height: 46vh;
+    height: 18rem;
   }
   .navigation-auto {
-    margin-top: 54vh;
+    margin-top: 19rem;
   }
   .manual-navigation {
-    margin-top: -10vh;
+    margin-top: -10.6rem;
   }
 }
 

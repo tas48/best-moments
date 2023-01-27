@@ -3,7 +3,7 @@
 .slider{
   width: 42vw;
   height: 62vh;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
 }
  
@@ -112,14 +112,14 @@
 
 @media(min-width: $tablet-landscape) and (max-width: $desktop){
   .slider{
-    height: 46vh;
+    height: 18rem;
   }
 
   .navigation-auto{
-    margin-top: 54vh;
+    margin-top: 19rem;
   }
 
   .manual-navigation{
-    margin-top: -10vh;
+    margin-top: -10.6rem;
   }
 }

@@ -62,11 +62,11 @@ nav{
   cursor: pointer;
 
   & div{
-    width: 32px;
+    width: 26px;
     height: 3px;
     border-radius: 50px;
     background-color: $secondary;
-    margin: 4px;
+    margin: 3px;
     transition: 0.5s;
   }
 }
@@ -75,14 +75,15 @@ nav{
    
   body{
     overflow-x: hidden;
+    
   }
 
   .nav-list{
-    position: absolute;
-    top: 6vh;
+    position: fixed;
+    top: 8vh;
     right: 0;
-    width: 38vw;
-    height: 52vh;
+    width: 180px;
+    height: 340px;
     background-color: $secondary;
     border-radius: 8px;
     flex-direction: column;

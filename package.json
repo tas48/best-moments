@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "navigo": "^8.11.1",
-    "normalize.css": "^8.0.1"
+    "navigo": "^8.11.1"
   }
 }

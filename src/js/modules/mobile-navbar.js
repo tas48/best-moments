@@ -12,7 +12,7 @@ function renderMenu(){
           link.style.animation = "";
         }
         else{
-          link.style.animation = `navLinkFade 0.5 ease forwards ${index/3 + 1}s`;    
+          link.style.animation = `navLinkFade 0.5 ease forwards ${index/2 + 1}s`;    
         }
       });
     });

@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.card-slider{
+  background-color: blue;
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+}

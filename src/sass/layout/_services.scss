@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+@use '../components/card-slider';
+
+.services-container{
+  display: flex;
+  gap: 2vw;
+  border: solid red 4px;
+  margin: 5rem 6rem 5rem 6rem;
+  padding: 0.6rem;
+}
+
+.aside-text{
+
+  & > h3{
+    margin: 0;
+    font-size: 0.7rem;
+    color: $accent-color;
+  }
+
+  & > h2{
+    margin: 0;
+    font-size: 24px;
+  }
+
+  & > p{
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+}
+

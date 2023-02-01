@@ -92,10 +92,6 @@ nav .nav-list li {
 }
 
 @media (max-width: 599px) {
-  body,
-  html {
-    overflow: hidden;
-  }
   .logo {
     max-width: 138px;
   }
@@ -344,13 +340,12 @@ nav .nav-list li {
 }
 .card-slider-container {
   background-color: red;
-  width: 150%;
-  height: 36vh;
-  overflow: hidden;
+  width: 240%;
+  height: 40vh;
+  overflow-x: hidden;
 }
 
 .arrows-btn {
-  background-color: green;
   display: flex;
   gap: 0.4rem;
 }
@@ -369,19 +364,22 @@ nav .nav-list li {
 .card-slider {
   background-color: blue;
   display: flex;
-  gap: 20px;
+  gap: 14px;
   justify-content: left;
   overflow-x: auto;
   width: 99%;
   height: 30vh;
   margin-top: 0.4rem;
+  padding: 10px;
 }
 .card-slider > div {
   background-color: violet;
-  min-width: 200px;
-  height: 170px;
+  min-width: 185px;
+  height: 160px;
   position: relative;
   left: 0;
+  border: 2px solid #688aa5;
+  border-radius: 8px;
   transition: 0.8s;
 }
 
@@ -402,8 +400,7 @@ nav .nav-list li {
 .services-container {
   display: flex;
   gap: 2vw;
-  border: solid red 4px;
-  margin: 5rem 6rem 5rem 6rem;
+  margin: 5rem 5rem 5rem 6rem;
   padding: 0.6rem;
 }
 

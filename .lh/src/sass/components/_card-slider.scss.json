@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/sass/components/_card-slider.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1675210319945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675210336803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @use '../abstracts/' as *;\r\n \r\n .card-slider-container{\r\n   background-color: red;\r\n-  width: q50%;\r\n+  width: 150%;\r\n   height: 36vh;\r\n   overflow: hidden;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1675210869581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n   overflow-x: auto;\r\n   width: 99%;\r\n   height: 30vh;\r\n   margin-top: 0.4rem;\r\n+  tran\r\n \r\n   & > div{\r\n     background-color: violet;\r\n     min-width: 200px;\r\n"
+                },
+                {
+                    "date": 1675210874925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n   overflow-x: auto;\r\n   width: 99%;\r\n   height: 30vh;\r\n   margin-top: 0.4rem;\r\n-  tran\r\n+  transition: 0.8s;\r\n \r\n   & > div{\r\n     background-color: violet;\r\n     min-width: 200px;\r\n"
+                },
+                {
+                    "date": 1675210900080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,8 @@\n   overflow-x: auto;\r\n   width: 99%;\r\n   height: 30vh;\r\n   margin-top: 0.4rem;\r\n-  transition: 0.8s;\r\n \r\n   & > div{\r\n     background-color: violet;\r\n     min-width: 200px;\r\n"
+                },
+                {
+                    "date": 1675210906653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,10 @@\n   & > div{\r\n     background-color: violet;\r\n     min-width: 200px;\r\n     height: 170px;\r\n+    po\r\n+    transition: 0.8s;\r\n   }\r\n }\r\n \r\n /*Hide scrollbars*/\r\n"
+                },
+                {
+                    "date": 1675210913767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,10 @@\n   & > div{\r\n     background-color: violet;\r\n     min-width: 200px;\r\n     height: 170px;\r\n-    po\r\n+    position: relative;\r\n+    left: 0;\r\n     transition: 0.8s;\r\n   }\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1675210319945,
+            "name": "Commit-0",
+            "content": "@use '../abstracts/' as *;\r\n\r\n.card-slider-container{\r\n  background-color: red;\r\n  width: q50%;\r\n  height: 36vh;\r\n  overflow: hidden;\r\n}\r\n\r\n.arrows-btn{\r\n  background-color: green;\r\n  display: flex;\r\n  gap: 0.4rem;\r\n\r\n  & > img{\r\n    border: solid 2px $secondary;\r\n    border-radius: 100%;\r\n    padding: 4px;\r\n    width: 16px;\r\n    height: 16px;\r\n    z-index: 1;\r\n  }\r\n\r\n  & > img:hover{\r\n    cursor: pointer;\r\n  }\r\n}\r\n\r\n.card-slider{\r\n  background-color: blue;\r\n  display: flex;\r\n  gap: 20px;\r\n  justify-content: left;\r\n  overflow-x: auto;\r\n  width: 99%;\r\n  height: 30vh;\r\n  margin-top: 0.4rem;\r\n\r\n  & > div{\r\n    background-color: violet;\r\n    min-width: 200px;\r\n    height: 170px;\r\n  }\r\n}\r\n\r\n/*Hide scrollbars*/\r\n.card-slider::-webkit-scrollbar{\r\n  visibility: hidden;\r\n}\r\n@-moz-document url-prefix() {\r\n  .card-slider{\r\n    scrollbar-width: none;\r\n  }\r\n}\r\n.card-slider{\r\n  -ms-overflow-style: none;\r\n}\r\n\r\n"
+        }
+    ]
+}

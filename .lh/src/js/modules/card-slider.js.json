@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/js/modules/card-slider.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1675208896622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675208910935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const \n\\ No newline at end of file\n+const arrow-nxt\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675208922628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const arrow-nxt\n\\ No newline at end of file\n+const arrowNext = document.get\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675208929679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const arrowNext = document.get\n\\ No newline at end of file\n+const arrowNext = document.getEle\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675208938113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const arrowNext = document.getEle\n\\ No newline at end of file\n+const arrowNext = document.getElement\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675208943386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const arrowNext = document.getElement\n\\ No newline at end of file\n+const arrowNext = document.getElementsByTagName()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675208985812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const arrowNext = document.getElementsByTagName()\n\\ No newline at end of file\n+const arrowPrev = document.getElementsByTagName('img')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675208992348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-const arrowPrev = document.getElementsById('')\n\\ No newline at end of file\n+const arrowPrev = document.getElementsById('#')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675209025385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default\r\n+export default \r\n \r\n const arrowPrev = document.getElementsById('#prev');\r\n const arrowNext = document.getElementsById('#nxt');\r\n console.log('');\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1675208896622,
+            "name": "Commit-0",
+            "content": "const "
+        }
+    ]
+}

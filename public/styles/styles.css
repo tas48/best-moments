@@ -344,7 +344,7 @@ nav .nav-list li {
 }
 .card-slider-container {
   background-color: red;
-  width: 250%;
+  width: 150%;
   height: 36vh;
   overflow: hidden;
 }
@@ -380,6 +380,9 @@ nav .nav-list li {
   background-color: violet;
   min-width: 200px;
   height: 170px;
+  position: relative;
+  left: 0;
+  transition: 0.8s;
 }
 
 /*Hide scrollbars*/

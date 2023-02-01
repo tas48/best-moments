@@ -1,9 +1,9 @@
 @use '../abstracts/' as *;
 
 .card-slider-container{
-  background-color: red;
+  // background-color: red;
   width: 240%;
-  height: 40vh;
+  height: 240px;
   overflow-x: hidden;
 }
 
@@ -26,18 +26,19 @@
 }
 
 .card-slider{
-  background-color: blue;
+  // background-color: blue;
   display: flex;
   gap: 14px;
   justify-content: left;
+  overflow-y: hidden;
   overflow-x: auto;
   width: 99%;
-  height: 30vh;
+  height: 170px;
   margin-top: 0.4rem;
   padding: 10px;
 
   & > div{
-    background-color: violet;
+    // background-color: violet;
     min-width: 185px;
     height: 160px;
     position: relative;
@@ -47,6 +48,40 @@
     transition: 0.8s;
   }
 }
+
+.item{
+  text-align: center;
+  padding: 0.5rem;
+
+  & > img{
+    margin-top: 1rem;
+  }
+
+  & > h4{
+    margin: 12px;
+    font-size: 1rem;
+    color: $secondary;
+  }
+
+  & > p{
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+
+.see-more{
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > p{
+    color: $secondary;
+    font-weight: 510;
+  }
+}
+
 
 /*Hide scrollbars*/
 .card-slider::-webkit-scrollbar{

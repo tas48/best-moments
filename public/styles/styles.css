@@ -339,9 +339,8 @@ nav .nav-list li {
   }
 }
 .card-slider-container {
-  background-color: red;
   width: 240%;
-  height: 40vh;
+  height: 240px;
   overflow-x: hidden;
 }
 
@@ -362,18 +361,17 @@ nav .nav-list li {
 }
 
 .card-slider {
-  background-color: blue;
   display: flex;
   gap: 14px;
   justify-content: left;
+  overflow-y: hidden;
   overflow-x: auto;
   width: 99%;
-  height: 30vh;
+  height: 170px;
   margin-top: 0.4rem;
   padding: 10px;
 }
 .card-slider > div {
-  background-color: violet;
   min-width: 185px;
   height: 160px;
   position: relative;
@@ -381,6 +379,35 @@ nav .nav-list li {
   border: 2px solid #688aa5;
   border-radius: 8px;
   transition: 0.8s;
+}
+
+.item {
+  text-align: center;
+  padding: 0.5rem;
+}
+.item > img {
+  margin-top: 1rem;
+}
+.item > h4 {
+  margin: 12px;
+  font-size: 1rem;
+  color: #688aa5;
+}
+.item > p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.see-more {
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.see-more > p {
+  color: #688aa5;
+  font-weight: 510;
 }
 
 /*Hide scrollbars*/
@@ -411,6 +438,7 @@ nav .nav-list li {
 }
 .aside-text > h2 {
   margin: 0;
+  padding-top: 0.4rem;
   font-size: 24px;
 }
 .aside-text > p {

@@ -340,13 +340,14 @@ nav .nav-list li {
 }
 .card-slider-container {
   width: 240%;
-  height: 240px;
+  height: 100%;
   overflow-x: hidden;
 }
 
 .arrows-btn {
   display: flex;
   gap: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 .arrows-btn > img {
   border: solid 2px #688aa5;
@@ -362,22 +363,21 @@ nav .nav-list li {
 
 .card-slider {
   display: flex;
-  gap: 14px;
+  gap: 1vw;
   justify-content: left;
   overflow-y: hidden;
   overflow-x: auto;
-  width: 99%;
-  height: 170px;
+  width: 100%;
   margin-top: 0.4rem;
-  padding: 10px;
+  padding: 0;
 }
-.card-slider > div {
-  min-width: 185px;
+.card-slider > .item {
+  min-width: 22%;
   height: 160px;
   position: relative;
   left: 0;
   border: 2px solid #688aa5;
-  border-radius: 8px;
+  border-radius: 20px;
   transition: 0.8s;
 }
 
@@ -394,20 +394,31 @@ nav .nav-list li {
   color: #688aa5;
 }
 .item > p {
-  margin: 0;
+  margin-inline: 1vw;
   font-size: 0.8rem;
 }
 
-.see-more {
-  border: 2px solid transparent;
+.see-more-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 3vh;
 }
-.see-more > p {
+.see-more-container .see-more {
+  height: 32px;
+  width: 130px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-color: #688aa5;
+  font-size: 0.8rem;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.see-more-container .see-more:hover {
+  border-color: #688aa5;
+  background-color: #f2f2f2;
   color: #688aa5;
-  font-weight: 510;
 }
 
 /*Hide scrollbars*/
@@ -428,9 +439,12 @@ nav .nav-list li {
   display: flex;
   gap: 2vw;
   margin: 5rem 5rem 5rem 6rem;
-  padding: 0.6rem;
+  padding: 0.4rem;
 }
 
+.aside-text {
+  padding-top: 3vh;
+}
 .aside-text > h3 {
   margin: 0;
   font-size: 0.7rem;
@@ -438,7 +452,7 @@ nav .nav-list li {
 }
 .aside-text > h2 {
   margin: 0;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
   font-size: 24px;
 }
 .aside-text > p {

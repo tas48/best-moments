@@ -4,7 +4,7 @@
 .services-container{
   display: flex;
   gap: 2vw;
-  margin: 5rem 5rem 5rem 6rem;
+  margin: 5rem 5rem 5rem 5rem;
   padding: 0.4rem;
 }
 
@@ -35,12 +35,11 @@
     display: flex;
     flex-direction: column;
     @include flex-center;
-    width: 80%;
+    margin-inline: 10vw;
   }
 
   .aside-text{
-    order: 1;
-    width: 100%;
+    order: 0;
   }
 
   .aside-text > h3{
@@ -49,7 +48,7 @@
   }
 
   .aside-text > h2{
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
   } 
 

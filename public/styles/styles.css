@@ -397,6 +397,12 @@ nav .nav-list li {
   font-size: 0.8rem;
 }
 
+@media (max-width: 599px) {
+  .card-slider-container {
+    order: 1;
+    width: 80%;
+  }
+}
 .see-more-container {
   display: flex;
   justify-content: center;
@@ -437,7 +443,7 @@ nav .nav-list li {
 .services-container {
   display: flex;
   gap: 2vw;
-  margin: 5rem 5rem 5rem 6rem;
+  margin: 5rem 5rem 5rem 5rem;
   padding: 0.4rem;
 }
 
@@ -467,18 +473,17 @@ nav .nav-list li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    margin-inline: 10vw;
   }
   .aside-text {
-    order: 1;
-    width: 100%;
+    order: 0;
   }
   .aside-text > h3 {
     font-size: 10px;
     text-align: center;
   }
   .aside-text > h2 {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
   }
   .aside-text > p {

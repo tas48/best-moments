@@ -542,6 +542,7 @@ nav .nav-list li {
 }
 @media (min-width: 600px) and (max-width: 900px) {
   .services-container {
+    margin: 0;
     display: flex;
     flex-direction: column;
     margin-inline: 4vw;

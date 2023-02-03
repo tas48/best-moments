@@ -64,7 +64,8 @@
 
 
 @media (min-width: $tablet-portrait) and (max-width: $tablet-landscape){
-  .services-container{ 
+  .services-container{
+    margin: 0; 
     display: flex;
     flex-direction: column;
     margin-inline: 4vw;

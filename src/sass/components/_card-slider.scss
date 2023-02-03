@@ -79,11 +79,12 @@
 
   .card-slider{
     width: 100%;
-    gap: 2vw;
+    gap: 3vw;
     overflow-x: auto;
 
     .item{    
       min-width: 35%;
+      gap: 10vw;
       & > img{
         width: 28px;
         height: 26px

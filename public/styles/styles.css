@@ -406,11 +406,12 @@ nav .nav-list li {
   }
   .card-slider {
     width: 100%;
-    gap: 2vw;
+    gap: 3vw;
     overflow-x: auto;
   }
   .card-slider .item {
     min-width: 35%;
+    gap: 10vw;
   }
   .card-slider .item > img {
     width: 28px;
@@ -520,7 +521,7 @@ nav .nav-list li {
     display: flex;
     flex-direction: column;
     margin-top: 2vw;
-    margin-inline: 1vw;
+    margin-inline: 4vw;
   }
   .aside-text {
     order: 0;
@@ -547,7 +548,7 @@ nav .nav-list li {
     display: flex;
     flex-direction: column;
     margin-top: 2vw;
-    margin-inline: 1vw;
+    margin-inline: 4vw;
   }
   .aside-text {
     order: 0;

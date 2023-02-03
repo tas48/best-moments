@@ -516,10 +516,11 @@ nav .nav-list li {
 
 @media (max-width: 599px) {
   .services-container {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin-inline: 4vw;
-    margin-block: 8vw;
+    margin-top: 2vw;
+    margin-inline: 1vw;
   }
   .aside-text {
     order: 0;
@@ -545,8 +546,8 @@ nav .nav-list li {
     margin: 0;
     display: flex;
     flex-direction: column;
-    margin-inline: 4vw;
-    margin-block: 8vw;
+    margin-top: 2vw;
+    margin-inline: 1vw;
   }
   .aside-text {
     order: 0;

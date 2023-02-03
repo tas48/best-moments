@@ -32,10 +32,11 @@
 
 @media (max-width: $mobile){
   .services-container{ 
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin-inline: 4vw;
-    margin-block: 8vw;
+    margin-top: 2vw;
+    margin-inline: 1vw;
   }
 
   .aside-text{
@@ -65,11 +66,11 @@
 
 @media (min-width: $tablet-portrait) and (max-width: $tablet-landscape){
   .services-container{
-    margin: 0; 
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin-inline: 4vw;
-    margin-block: 8vw;
+    margin-top: 2vw;
+    margin-inline: 1vw;
   }
 
   .aside-text{
@@ -96,6 +97,5 @@
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1280px){
-  //1000px
+@media (min-width: 1000px) and (max-width: 1400px){
 }

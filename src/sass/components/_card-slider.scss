@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .card-slider-container{
-  background-color: red;
+  // background-color: red;
   width: 240%;
   height: 100%;
   overflow-x: hidden;
@@ -27,7 +27,7 @@
 }
 
 .card-slider{
-  background-color: aqua;
+  // background-color: aqua;
   display: flex;
   gap: 1vw;
   justify-content: left;
@@ -38,7 +38,7 @@
   margin-top: 0.4rem;
   padding: 0;
 
-  & > .item{
+  .item{
     min-width: 21%;
     height: 160px;
     position: relative;
@@ -65,16 +65,80 @@
     }
   }
 }
+
 @media (max-width: $mobile){
+  .card-slider-container{
+    order: 1;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .arrows-btn{
+    display: none;
+  }
+
+  .card-slider{
+    width: 100%;
+    gap: 2vw;
+    overflow-x: auto;
+
+    .item{    
+      min-width: 35%;
+      & > img{
+        width: 28px;
+        height: 26px
+      }
+
+      & > h4{
+        font-size: 14px;
+      }
+
+      & > p{
+        font-size: 0.76rem
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-portrait) and (max-width: $tablet-landscape){
   
   .card-slider-container{
     order: 1;
-    width: 80%
+    width: 100%;
+    overflow-x: hidden;
   }
 
+  .arrows-btn{
+    display: none;
+  }
 
+  .card-slider{
+    width: 100%;
+    gap: 2vw;
+    overflow-x: auto;
 
+    .item{    
+      min-width: 22%;
+      & > img{
+        width: 28px;
+        height: 26px
+      }
+
+      & > h4{
+        font-size: 14px;
+      }
+
+      & > p{
+        font-size: 0.76rem
+      }
+    }
+  }
 }
+
+@media (min-width: 1000px) and (max-width: 1280px){
+  //1000px
+}
+
 
 .see-more-container{
   @include flex-center;

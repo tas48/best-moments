@@ -1,10 +1,30 @@
-<ifModule mod_rewrite.c>
-
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
-
-</ifModule>
-
-ErrorDocument 404 /content/not-found.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada</title>
+  <link rel="stylesheet" href="../../public/styles/styles.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="not-found-text">
+        <h1>Desculpe!</h1>
+        <p>Não conseguimos encontrar essa página, talvez você esteja buscando:</p>
+        <div>
+          <a href="../content/services" id="btn-1"> Nossos serviços</a>
+          <a href="../content/about" id="btn-2">Quem somos</a>
+          <a href="../../index#contact" id="btn-3">Contato</a>
+        </div>
+      </div>
+      
+      <aside>
+        <img class="nf-img" src="../../public/icons/not-found.svg" alt="icone de uma mulher">
+      </aside>
+    </div>
+  </main>
+  
+</body>
+</html>

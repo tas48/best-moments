@@ -1,0 +1,73 @@
+@use '../abstracts' as *;
+
+main{
+  @include flex-center;
+}
+
+.container{
+  @include flex-center;
+}
+
+.not-found-text{
+  width: 40vw;
+  background-color: red;
+
+
+  & > p{
+    font-size: 22px;    
+  }
+
+  & > div{
+    
+    margin-top: 6vh;
+    display: flex;
+    gap: 2vw;
+  }
+
+}
+
+#btn-1{
+  background-color: $accent-color;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  padding: 8px 18px 8px 18px;
+  color: $primary;
+  transition: 0.8s;
+
+  &:hover{
+    @include btn-hover($accent-color, $primary) 
+  }
+}
+
+#btn-2{
+  background-color: $secondary;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  padding: 8px 18px 8px 18px;
+  color: $primary;
+  transition: 0.8s;
+
+  &:hover{
+    @include btn-hover($secondary, $primary);
+  }
+}
+
+#btn-3{
+  background-color: #b074e0;
+  border-radius: 14px;
+  border: 2px solid transparent;
+  padding: 8px 18px 8px 18px;
+  color: $primary;
+  transition: 0.8s;
+
+  &:hover{
+    @include btn-hover(#b074e0, $primary);
+  }
+}
+
+
+.nf-img{
+  width: 500px;
+  height: 500px;
+}
+

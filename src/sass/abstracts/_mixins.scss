@@ -3,3 +3,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin btn-hover($color, $background){
+  border-color: $color;
+  background-color: $background;
+  color: $color;
+}

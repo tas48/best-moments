@@ -5,8 +5,5 @@
   "main": "index.js",
   "scripts": {},
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "navigo": "^8.11.1"
-  }
+  "license": "ISC"
 }

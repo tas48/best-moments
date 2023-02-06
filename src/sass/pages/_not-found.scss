@@ -9,66 +9,33 @@ main{
 }
 
 .not-found-text{
-  width: 60%;
+  width: 40%;
   padding: 2%;
 
-
+  & > h1{
+    font-size: 38px;
+    color: $secondary;
+  }
+  
   & > p{
-    font-size: 22px;    
+    margin-block: 35px;
+    font-size: 16px; 
+    color: #2f2f2fa6;   
   }
-
-  & > div{
-    
-    margin-top: 6vh;
-    @include flex-center;
-    flex-wrap: wrap;
-    gap: 2vw;
-  }
-
 }
 
-#btn-1{
+.back-to-home{
   background-color: $accent-color;
   border-radius: 14px;
   border: 2px solid transparent;
-  height: 32px;
-  width: 180px;
+  height: 38px;
+  width: 250px;
   @include flex-center;
   color: $primary;
   transition: 0.8s;
 
   &:hover{
     @include btn-hover($accent-color, $primary) 
-  }
-}
-
-#btn-2{
-  background-color: $secondary;
-  border-radius: 14px;
-  border: 2px solid transparent;
-  height: 32px;
-  min-width: 160px;
-  @include flex-center;
-  color: $primary;
-  transition: 0.8s;
-
-  &:hover{
-    @include btn-hover($secondary, $primary);
-  }
-}
-
-#btn-3{
-  background-color: #b074e0;
-  border-radius: 14px;
-  border: 2px solid transparent;
-  height: 32px;
-  width: 120px;
-  @include flex-center;
-  color: $primary;
-  transition: 0.8s;
-
-  &:hover{
-    @include btn-hover(#b074e0, $primary);
   }
 }
 
@@ -84,6 +51,7 @@ main{
   main{
     @include flex-center;
   }
+
   .container{
     flex-direction: column;
   }
@@ -98,17 +66,20 @@ main{
   .not-found-text{
     order: 0;
     min-width: 70%;
+    @include flex-center;
+    flex-direction: column;
 
     & > h1{
       text-align: center;
     }
 
-    & > p {
+    & > p{
+      margin-block: 40px;
       text-align: center;
-
     }
+
     & > div{
-      margin-top: 2vh;
+
     }
   }
 

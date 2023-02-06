@@ -6,17 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página não encontrada</title>
   <link rel="stylesheet" href="../../public/styles/styles.css">
+  <script type="module" src="../js/pages/home.js"></script>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="#"><img class="logo" src="../../public/icons/logo.svg" alt="Logo da empresa"></a>
+      <ul class="nav-list">
+        <li><a class="link" href="#">INÍCIO</a></li>
+        <li><a class="link" href="about">SOBRE</a></li>
+        <li><a class="link" href="servicos">SERVIÇOS</a></li>
+        <li><a class="link" href="#parceiros">PARCEIROS</a></li>
+        <li><a class="link" href="#contato">CONTATO</a></li>
+      </ul>
+      <a href="http://google.com.br" target="_blank" rel="noopener noreferrer"><button class="whats-btn">Nosso WhatsApp</button></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
   <main>
     <div class="container">
       <div class="not-found-text">
-        <h1>Desculpe!</h1>
-        <p>Não conseguimos encontrar essa página, talvez você esteja buscando:</p>
+        <h1>Oops! Algo está errado</h1>
+        <p>A página que você esta procurando não existe neste site, talvez seja melhor retornar a página inicial, ok?</p>
         <div>
-          <a href="../content/services" id="btn-1"> Nossos serviços</a>
-          <a href="../content/about" id="btn-2">Quem somos</a>
-          <a href="../../index#contact" id="btn-3">Contato</a>
+          <a href="../../index" class="back-to-home">Retornar a página inicial</a>
         </div>
       </div>
       

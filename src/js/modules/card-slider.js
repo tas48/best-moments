@@ -29,8 +29,6 @@ function cardSlider(){
       if(current == 2){i.style.left = "-50%";}
       if(current == 3){i.style.left = "-75%";}
       if(current == 4){i.style.left = "-100%";}
-    
-  
     }
   });
 }

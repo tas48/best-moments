@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f2f2f2;
   font-family: "Poppins", sans-serif;
@@ -33,7 +37,7 @@ nav .nav-list li {
 
 .link {
   color: #2e2e2e;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 .link:hover {
@@ -569,6 +573,56 @@ nav .nav-list li {
     order: 2;
   }
 }
+footer {
+  background-color: #3F3F3F;
+  padding: 10px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3F3F3F;
+}
+
+.brand {
+  text-align: center;
+}
+.brand > img {
+  width: 162px;
+  height: 42px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-media > img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+.footer-nav > li {
+  list-style: none;
+  letter-spacing: 1.2px;
+}
+.footer-nav > li > a {
+  color: #f2f2f2;
+  font-size: 0.8rem;
+}
+
+.to-top {
+  background-color: transparent;
+  border: none;
+}
+
 main {
   display: flex;
   justify-content: center;

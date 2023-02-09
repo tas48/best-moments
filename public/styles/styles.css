@@ -573,56 +573,6 @@ nav .nav-list li {
     order: 2;
   }
 }
-footer {
-  background-color: #3F3F3F;
-  padding: 10px;
-}
-
-.container-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #3F3F3F;
-}
-
-.brand {
-  text-align: center;
-}
-.brand > img {
-  width: 162px;
-  height: 42px;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.social-media > img {
-  width: 18px;
-  height: 18px;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 26px;
-}
-.footer-nav > li {
-  list-style: none;
-  letter-spacing: 1.2px;
-}
-.footer-nav > li > a {
-  color: #f2f2f2;
-  font-size: 0.8rem;
-}
-
-.to-top {
-  background-color: transparent;
-  border: none;
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -637,7 +587,6 @@ main {
 
 .not-found-text {
   width: 40%;
-  padding: 2%;
 }
 .not-found-text > h1 {
   font-size: 38px;
@@ -669,7 +618,7 @@ main {
 
 .nf-img {
   width: 350px;
-  height: 400px;
+  height: 300px;
 }
 
 @media (max-width: 900px) {
@@ -700,6 +649,78 @@ main {
   .not-found-text > p {
     margin-block: 40px;
     text-align: center;
+  }
+}
+footer {
+  background-color: #3F3F3F;
+  margin-bottom: 0;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3F3F3F;
+  padding-block: 10px;
+}
+
+.brand {
+  text-align: center;
+}
+.brand > img {
+  width: 162px;
+  height: 42px;
+}
+
+.social-media {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+.footer-nav > li {
+  list-style: none;
+  letter-spacing: 1.2px;
+}
+.footer-nav > li > a {
+  color: #f2f2f2;
+  font-size: 0.8rem;
+}
+
+.to-top {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 600px) {
+  .container-footer {
+    flex-direction: column;
+  }
+  .brand > img {
+    margin-top: 10px;
+    width: 152px;
+    height: 32px;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+  .to-top {
+    display: none;
+  }
+  .social-media {
+    display: none;
   }
 }
 

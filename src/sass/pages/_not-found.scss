@@ -1,5 +1,5 @@
 @use '../abstracts' as *;
-@use '../components/footer';
+
 
 main{
   @include flex-center;
@@ -11,7 +11,6 @@ main{
 
 .not-found-text{
   width: 40%;
-  padding: 2%;
 
   & > h1{
     font-size: 38px;
@@ -43,7 +42,7 @@ main{
 
 .nf-img{
   width: 350px;
-  height: 400px;
+  height: 300px;
 }
 
 

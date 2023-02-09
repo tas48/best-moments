@@ -2,7 +2,7 @@
 
 footer{
   background-color: $footer-bg;
-  padding: 10px;
+  margin-bottom: 0;
 }
 
 .container-footer{
@@ -10,6 +10,7 @@ footer{
   justify-content: space-around;
   align-items: center;
   background-color: $footer-bg;
+  padding-block: 10px;
 }
 
 .brand{
@@ -22,13 +23,14 @@ footer{
 }
 
 .social-media{
+  margin-top: 4px;
   @include flex-center;
   gap: 10px;
+}
 
-  & > img{
-    width: 18px;
-    height: 18px;
-  }
+.social-icon{
+  width: 14px;
+  height: 14px;
 }
 
 .footer-nav{
@@ -50,4 +52,30 @@ footer{
 .to-top{
   background-color: transparent;
   border: none;
+}
+
+@media (max-width: $tablet-portrait){
+
+  .container-footer{
+    flex-direction: column;
+  }
+
+  .brand > img{
+    margin-top: 10px;
+    width: 152px;
+    height: 32px;
+  }
+
+  .footer-nav{
+    flex-direction: column;
+  }
+
+  .to-top{
+    display: none;
+  }
+
+  .social-media{
+    display: none;
+  }
+
 }

@@ -62,22 +62,51 @@
   }
 }
 
+.whats-btn-mobile{
+  display: none;
+}
+
 @media(max-width: $mobile){
-  
   .call-to-action{
-    
-    & h2{
+    & > h2{
       font-size: 2rem;
     }
 
-    &p{
+    & > p{
       font-size: 0.8rem;
     }
+
+    & > div{
+      display: flex;
+      justify-content: center;
+    }
+
   }
   
   .follow-btn{
     display: none;
   }
+
+  .services-btn{
+    display: none;  
+  }
+
+  .whats-btn-mobile{
+    display: block;
+    text-align: center;
+    color: $primary;
+    background-color: $accent-color;
+    border: 2px solid transparent;
+    transition-duration: 0.8s;
+  
+    &:hover{
+      cursor: pointer;
+      background-color: $primary;
+      border-color: $accent-color;
+      color: $accent-color;
+    }
+  }
+
 }
 
 @media(max-width: $tablet-landscape){

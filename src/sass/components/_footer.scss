@@ -2,7 +2,6 @@
 
 footer{
   background-color: $footer-bg;
-  margin-bottom: 0;
 }
 
 .container-footer{
@@ -10,7 +9,7 @@ footer{
   justify-content: space-around;
   align-items: center;
   background-color: $footer-bg;
-  padding-block: 10px;
+  padding-top: 10px;
 }
 
 .brand{
@@ -23,7 +22,7 @@ footer{
 }
 
 .social-media{
-  margin-top: 4px;
+  margin-block: 4px;
   @include flex-center;
   gap: 10px;
 }
@@ -52,6 +51,16 @@ footer{
 .to-top{
   background-color: transparent;
   border: none;
+}
+
+.copyright{
+  margin: 0;
+  color: $primary;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  background-color: #2f2f2f;
+  padding: 3px;
 }
 
 @media (max-width: $tablet-portrait){

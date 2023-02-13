@@ -70,12 +70,21 @@ footer{
     flex-direction: column;
   }
 
+  .social-media{
+    display: none;
+  }
+
   .to-top{
     display: none;
   }
 
-  .social-media{
-    display: none;
+  .copyright{
+    color: $primary;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    background-color: #2f2f2f;
+    padding: 2px;
   }
 
 }

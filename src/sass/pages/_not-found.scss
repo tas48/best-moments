@@ -1,12 +1,12 @@
 @use '../abstracts' as *;
 
-
 main{
   @include flex-center;
 }
 
 .container{
   @include flex-center;
+  min-height: 70vh;
 }
 
 .not-found-text{
@@ -56,10 +56,9 @@ main{
     flex-direction: column;
   }
   
-  
   .nf-img{
     order: 1;
-    width: 350px;
+    width: 250px;
     height: 300px;
   }
 
@@ -71,11 +70,29 @@ main{
 
     & > h1{
       text-align: center;
+      margin-top: 32px;
+      margin-bottom: 0px;
     }
 
     & > p{
-      margin-block: 40px;
+      margin-bottom: 40px;
       text-align: center;
+    }
+  }
+
+  .back-to-home{
+    background-color: $accent-color;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+    height: 38px;
+    width: 220px;
+    @include flex-center;
+    color: $primary;
+    transition: 0.8s;
+  
+    &:hover{
+      @include btn-hover($accent-color, $primary) 
     }
   }
 }

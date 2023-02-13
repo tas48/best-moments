@@ -608,6 +608,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 70vh;
 }
 
 .not-found-text {
@@ -657,7 +658,7 @@ main {
   }
   .nf-img {
     order: 1;
-    width: 350px;
+    width: 250px;
     height: 300px;
   }
   .not-found-text {
@@ -670,10 +671,30 @@ main {
   }
   .not-found-text > h1 {
     text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0px;
   }
   .not-found-text > p {
-    margin-block: 40px;
+    margin-bottom: 40px;
     text-align: center;
+  }
+  .back-to-home {
+    background-color: #59b96e;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+    height: 38px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    transition: 0.8s;
+  }
+  .back-to-home:hover {
+    border-color: #59b96e;
+    background-color: #f2f2f2;
+    color: #59b96e;
   }
 }
 footer {

@@ -10,18 +10,6 @@
   margin-bottom: 10vh;
 }
 
-.testimony-card{
-  background-color: $secondary;
-  border-radius: 20px;
-  text-align: center;
-  padding: 10px 10px 10px 10px;
-}
-
-.author{
-  display: flex;
-  align-items: center;
-}
-
 .testimony-title{
   grid-column-start: 1;
   grid-column-end: 2;
@@ -35,10 +23,40 @@
   & > h2{
     margin: 0;
     padding-top: 0.2rem;
-    font-size: 28px;
+    font-size: 32px;
+  }
+}
+
+.testimony-card{
+  background-color: $secondary;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2% 8% 2% 8%;
+
+  & > img{
+    width: 62px;
+    height: auto;
   }
 
+  & > p{
+    margin-inline: 10px;
+    text-align: center;
+    color: $primary;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
 }
+
+.author{
+  display: flex;
+  align-items: center;
+
+  & > p{
+    color: $primary;
+    font-size: 0.9rem;
+  }
+}
+
 
 #t1{
   grid-column-start: 2;

@@ -598,6 +598,72 @@ nav .nav-list li {
     order: 2;
   }
 }
+.testimony-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 130px 200px 100px 200px 100px;
+  gap: 3vw;
+}
+
+.testimony-card {
+  background-color: #688aa5;
+  border-radius: 8px;
+  text-align: center;
+  padding: 40px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.testimony-title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#t1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#t2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#t3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+#t4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+#t5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+#t6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
 main {
   display: flex;
   justify-content: center;

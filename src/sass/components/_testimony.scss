@@ -2,19 +2,19 @@
 
 .testimony-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 130px 200px 100px 200px 100px;
-  gap: 3vw;
- 
+  grid-template-columns: 0.5fr 0.4fr 0.6fr;
+  grid-template-rows: 0.3fr 0.8fr 0.2fr 1fr;
+  column-gap: 2vw;
+  row-gap: 1.5vw;
+  padding-inline: 6vw;
+  margin-bottom: 10vh;
 }
 
 .testimony-card{
   background-color: $secondary;
-  // width: 30vw;
-  // height: 50vh;
-  border-radius: 8px;
+  border-radius: 20px;
   text-align: center;
-  padding: 40px;
+  padding: 10px 10px 10px 10px;
 }
 
 .author{
@@ -25,6 +25,19 @@
 .testimony-title{
   grid-column-start: 1;
   grid-column-end: 2;
+
+  & > h3{
+    margin: 0;
+    font-size: 0.7rem;
+    color: $accent-color;
+  }
+
+  & > h2{
+    margin: 0;
+    padding-top: 0.2rem;
+    font-size: 28px;
+  }
+
 }
 
 #t1{
@@ -66,5 +79,5 @@
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
-  grid-row-end: 6;
+  grid-row-end: 5;
 }

@@ -22,7 +22,18 @@
 .sponsors-text{
   width: 25%;
   @include aside-text($accent-color);
+
+  & > p{
+    margin-bottom: 12px;
+  }
+
+  & > a{
+    font-size: 0.9rem;
+    color: $secondary;
+    cursor: pointer;
+  }
 }
+
 
 .sponsor-wts-btn{
   width: 126px;
@@ -40,5 +51,36 @@
   }
 }
 
+
+@media (max-width: $tablet-landscape){
+  .sponsors-container{
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .sponsors-text{
+    order: 0;
+    width: 100%;
+
+    & > p{
+      display: none;
+    }
+
+    & > a{
+      display: none;
+    }
+  }
+
+  .sponsors{
+    order: 1;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile){
+    .sponsors{
+      flex-direction: column;
+    }
+  }
+}
 
 

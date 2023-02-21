@@ -799,6 +799,14 @@ nav .nav-list li {
   padding-top: 1rem;
   font-size: 0.9rem;
 }
+.sponsors-text > p {
+  margin-bottom: 12px;
+}
+.sponsors-text > a {
+  font-size: 0.9rem;
+  color: #688aa5;
+  cursor: pointer;
+}
 
 .sponsor-wts-btn {
   width: 126px;
@@ -818,6 +826,31 @@ nav .nav-list li {
   color: #f2f2f2;
 }
 
+@media (max-width: 900px) {
+  .sponsors-container {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .sponsors-text {
+    order: 0;
+    width: 100%;
+  }
+  .sponsors-text > p {
+    display: none;
+  }
+  .sponsors-text > a {
+    display: none;
+  }
+  .sponsors {
+    order: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 900px) and (max-width: 599px) {
+  .sponsors {
+    flex-direction: column;
+  }
+}
 main {
   display: flex;
   justify-content: center;

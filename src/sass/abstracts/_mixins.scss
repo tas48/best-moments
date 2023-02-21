@@ -5,7 +5,8 @@
 }
 
 @mixin btn-hover($color, $background){
-  border-color: $color;
+  cursor: pointer;
+  border-color: $background;
   background-color: $background;
   color: $color;
 }

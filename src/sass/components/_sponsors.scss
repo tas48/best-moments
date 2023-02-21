@@ -1,25 +1,44 @@
 @use '../abstracts/' as *;
 
 .sponsors-container{
-  background-color: blue;
-  padding: 10px;
   display: flex;
+  align-items: center;
   margin-inline: 5vw;
+  gap: 1vw;
+  margin-bottom: 4vh;
 }
 
 .sponsors{
-  background-color: red;
   display: flex;
   width: 75%;
+  gap: 10px;
+}
+
+.sponsor-info{
+  text-align: center;
+  padding: 2%;
 }
 
 .sponsors-text{
-  background-color: green;
   width: 25%;
-
   @include aside-text($accent-color);
-
-
-
 }
+
+.sponsor-wts-btn{
+  width: 126px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: $title;
+  background-color: transparent;
+  border: 2px solid $accent-color;
+  border-radius: 30px;
+  color: $accent-color;
+  transition-duration: 0.8s;
+
+  &:hover{
+    @include btn-hover($primary, $accent-color);
+  }
+}
+
+
 

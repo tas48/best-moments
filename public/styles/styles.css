@@ -763,20 +763,25 @@ nav .nav-list li {
   }
 }
 .sponsors-container {
-  background-color: blue;
-  padding: 10px;
   display: flex;
+  align-items: center;
   margin-inline: 5vw;
+  gap: 1vw;
+  margin-bottom: 4vh;
 }
 
 .sponsors {
-  background-color: red;
   display: flex;
   width: 75%;
+  gap: 10px;
+}
+
+.sponsor-info {
+  text-align: center;
+  padding: 2%;
 }
 
 .sponsors-text {
-  background-color: green;
   width: 25%;
 }
 .sponsors-text h3 {
@@ -793,6 +798,24 @@ nav .nav-list li {
   margin: 0;
   padding-top: 1rem;
   font-size: 0.9rem;
+}
+
+.sponsor-wts-btn {
+  width: 126px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid #59b96e;
+  border-radius: 30px;
+  color: #59b96e;
+  transition-duration: 0.8s;
+}
+.sponsor-wts-btn:hover {
+  cursor: pointer;
+  border-color: #59b96e;
+  background-color: #59b96e;
+  color: #f2f2f2;
 }
 
 main {
@@ -834,7 +857,8 @@ main {
   transition: 0.8s;
 }
 .back-to-home:hover {
-  border-color: #59b96e;
+  cursor: pointer;
+  border-color: #f2f2f2;
   background-color: #f2f2f2;
   color: #59b96e;
 }
@@ -889,7 +913,8 @@ main {
     transition: 0.8s;
   }
   .back-to-home:hover {
-    border-color: #59b96e;
+    cursor: pointer;
+    border-color: #f2f2f2;
     background-color: #f2f2f2;
     color: #59b96e;
   }

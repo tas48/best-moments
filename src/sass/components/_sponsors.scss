@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+.sponsors-container{
+  background-color: blue;
+  padding: 10px;
+  display: flex;
+  margin-inline: 5vw;
+}
+
+.sponsors{
+  background-color: red;
+  display: flex;
+  width: 75%;
+}
+
+.sponsors-text{
+  background-color: green;
+  width: 25%;
+
+  @include aside-text($accent-color);
+
+
+
+}
+

@@ -9,3 +9,23 @@
   background-color: $background;
   color: $color;
 }
+
+@mixin aside-text($accent-color){
+   h3{
+    margin: 0;
+    font-size: 0.7rem;
+    color: $accent-color;
+  }
+
+  h2{
+    margin: 0;
+    padding-top: 0.2rem;
+    font-size: 28px;
+  }
+
+  p{
+    margin: 0;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+}

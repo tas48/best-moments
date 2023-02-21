@@ -528,17 +528,17 @@ nav .nav-list li {
 .aside-text {
   padding-top: 3vh;
 }
-.aside-text > h3 {
+.aside-text h3 {
   margin: 0;
   font-size: 0.7rem;
   color: #59b96e;
 }
-.aside-text > h2 {
+.aside-text h2 {
   margin: 0;
   padding-top: 0.2rem;
-  font-size: 24px;
+  font-size: 28px;
 }
-.aside-text > p {
+.aside-text p {
   margin: 0;
   padding-top: 1rem;
   font-size: 0.9rem;
@@ -612,15 +612,20 @@ nav .nav-list li {
   grid-column-start: 1;
   grid-column-end: 2;
 }
-.testimony-title > h3 {
+.testimony-title h3 {
   margin: 0;
   font-size: 0.7rem;
   color: #59b96e;
 }
-.testimony-title > h2 {
+.testimony-title h2 {
   margin: 0;
   padding-top: 0.2rem;
-  font-size: 32px;
+  font-size: 28px;
+}
+.testimony-title p {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 0.9rem;
 }
 
 .testimony-card {
@@ -757,6 +762,39 @@ nav .nav-list li {
     display: none;
   }
 }
+.sponsors-container {
+  background-color: blue;
+  padding: 10px;
+  display: flex;
+  margin-inline: 5vw;
+}
+
+.sponsors {
+  background-color: red;
+  display: flex;
+  width: 75%;
+}
+
+.sponsors-text {
+  background-color: green;
+  width: 25%;
+}
+.sponsors-text h3 {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #59b96e;
+}
+.sponsors-text h2 {
+  margin: 0;
+  padding-top: 0.2rem;
+  font-size: 28px;
+}
+.sponsors-text p {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
 main {
   display: flex;
   justify-content: center;

@@ -1,5 +1,9 @@
 @use '../abstracts' as *;
 
+header{
+  z-index: 99; 
+}
+
 nav{
   display: flex;
   justify-content: space-around;
@@ -55,6 +59,16 @@ nav{
 .current-page{
   font-weight: $title;
   color: $secondary;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 11vh;
+  background-color: $primary;
+  border-bottom: solid 1px $text-color;
+
 }
 
 .mobile-menu{

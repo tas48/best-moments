@@ -14,13 +14,7 @@ function currentPage(){
   }
   else if(path.endsWith('sponsors.html')){
     menuLink[4].classList.add('current-page');
-  }
-
-  
-  menuLink.forEach( () => {
-    
-  });
-  
+  }  
 }
 
 export default currentPage;

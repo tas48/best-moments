@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.team-section{
+  margin-block: 4%;
+}
+
+.team-container{
+  display: flex;
+  flex-wrap: wrap;
+  @include flex-center;
+  gap: 8%;
+  margin: 2%;
+}
+
+.team-card{
+  text-align: center;
+
+  & > img{
+    border-radius: 50%;
+  }
+}
+
+.team-text{
+  @include aside-text($accent-color);
+  padding-inline: 10%;
+}

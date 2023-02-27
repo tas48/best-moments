@@ -76,9 +76,9 @@ nav .nav-list li {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 10vh;
+  height: 11vh;
   background-color: #f2f2f2;
-  border-bottom: solid 1px #2e2e2e;
+  border-bottom: solid 1px #bbb6b6;
 }
 
 .mobile-menu {
@@ -551,7 +551,7 @@ nav .nav-list li {
 }
 .aside-text h3 {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #59b96e;
 }
 .aside-text h2 {
@@ -635,7 +635,7 @@ nav .nav-list li {
 }
 .testimony-title h3 {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #59b96e;
 }
 .testimony-title h2 {
@@ -807,7 +807,7 @@ nav .nav-list li {
 }
 .sponsors-text h3 {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #59b96e;
 }
 .sponsors-text h2 {
@@ -961,6 +961,46 @@ footer {
     padding: 2px;
   }
 }
+.team-section {
+  margin-block: 4%;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  margin: 2%;
+}
+
+.team-card {
+  text-align: center;
+}
+.team-card > img {
+  border-radius: 50%;
+}
+
+.team-text {
+  padding-inline: 10%;
+}
+.team-text h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #59b96e;
+}
+.team-text h2 {
+  margin: 0;
+  padding-top: 0.2rem;
+  font-size: 28px;
+}
+.team-text p {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
 main {
   display: flex;
   justify-content: center;

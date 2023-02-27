@@ -5,7 +5,7 @@ import toTop from '../modules/to-top.js';
 import currentYear from '../modules/current-year.js';
 
 renderMenu();
-// stickyNavbar();
-// imageSlider();
+stickyNavbar();
+imageSlider();
 toTop();
 currentYear();

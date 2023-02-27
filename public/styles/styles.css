@@ -44,9 +44,6 @@ nav .nav-list li {
   font-size: 0.8rem;
   font-weight: 400;
 }
-.link:hover {
-  color: #688aa5;
-}
 
 .whats-btn {
   width: 156px;
@@ -68,8 +65,8 @@ nav .nav-list li {
 
 /* change de nav's link based on the current page  */
 .current-page {
-  font-weight: 600;
-  color: #688aa5;
+  border-bottom: solid 2px #688aa5;
+  padding-inline: 2px;
 }
 
 .sticky {

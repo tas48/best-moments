@@ -30,10 +30,6 @@ nav{
   color: $text-color;
   font-size: 0.8rem;
   font-weight: $paragraph;
-
-  &:hover{
-    color: $secondary;
-  }
 }
 
 .whats-btn{
@@ -57,8 +53,8 @@ nav{
 
 /* change de nav's link based on the current page  */
 .current-page{
-  font-weight: $title;
-  color: $secondary;
+  border-bottom: solid 2px $secondary;
+  padding-inline: 2px;
 }
 
 .sticky{

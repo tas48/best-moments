@@ -23,4 +23,5 @@
 .team-text{
   @include aside-text($accent-color);
   padding-inline: 10%;
+  padding-block: 2%;
 }

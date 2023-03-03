@@ -1,0 +1,71 @@
+@use '../abstracts/' as *;
+
+.contact-form{
+  display: flex;
+  gap: 4vw;
+  margin-inline: 8%;
+  margin-block: 4%;
+  @include flex-center;
+}
+
+form{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  order: 1;
+}
+
+.aside-form{
+  width: 40%;
+  @include aside-text($accent-color);
+  order: 0;
+}
+
+.name-and-email{
+  display: flex;
+  gap: 1vw;
+
+  & > input{
+    width: 22vw;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid $secondary;
+    padding-left: 10px;
+  }
+}
+
+.message > input{
+  width: 47vw;
+  height: 22vh;
+  border-radius: 8px;
+  border: 2px solid $secondary;
+
+  & > input::placeholder{
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+.contact-links{
+  margin-top: 3vh;
+  display: flex;
+  @include flex-center;
+}
+
+.form-whats-btn{
+  width: 146px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: $title;
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  border-radius: 30px;
+  color: $primary;
+  transition-duration: 0.6s;
+  display: flex;
+  @include flex-center;
+  gap: 10px;
+  cursor: pointer;
+}

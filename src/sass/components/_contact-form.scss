@@ -27,7 +27,7 @@ form{
   gap: 1vw;
 
   & > input{
-    width: 22vw;
+    // width: 22vw;
     height: 32px;
     border-radius: 8px;
     border: 2px solid $secondary;
@@ -35,15 +35,19 @@ form{
   }
 }
 
-.message > input{
+.message{
   width: 47vw;
   height: 22vh;
+  resize: none;
   border-radius: 8px;
+  padding: 10px;
   border: 2px solid $secondary;
 
-  & > input::placeholder{
+  &::placeholder{
+    padding: 10px;
     position: absolute;
-    top: 0;
+    top: 0; 
+    left: 0;
   }
 }
 
@@ -52,6 +56,7 @@ form{
   margin-top: 3vh;
   display: flex;
   @include flex-center;
+  gap: 20px;
 }
 
 .form-whats-btn{
@@ -68,4 +73,46 @@ form{
   @include flex-center;
   gap: 10px;
   cursor: pointer;
+}
+
+.phone{
+  background-color: red;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-landscape){
+  .name-and-email{
+    flex-direction: column-reverse;
+    
+    & > input{
+      width: 44vw;
+    }
+  }
+
+  .message{
+    width: 43vw;
+  }
+
+  .aside-form{
+    width: 50%;
+  }
+
+  form{
+    width: 50%;
+  }
+
+  .contact-links{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px){
+  
+  .contact-form{
+    flex-direction: column;
+  }
+  
+  .aside-form > p{
+    display: none;
+  }    
 }

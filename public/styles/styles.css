@@ -1000,6 +1000,7 @@ form {
   gap: 1vw;
 }
 .name-and-email > input {
+  min-width: 22vw;
   height: 32px;
   border-radius: 8px;
   border: 2px solid #688aa5;
@@ -1007,7 +1008,7 @@ form {
 }
 
 .message {
-  width: 47vw;
+  min-width: 47vw;
   height: 22vh;
   resize: none;
   border-radius: 8px;
@@ -1055,13 +1056,13 @@ form {
 
 @media (max-width: 900px) {
   .name-and-email {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .name-and-email > input {
-    width: 44vw;
+    min-width: 44vw;
   }
   .message {
-    width: 43vw;
+    min-width: 43vw;
   }
   .aside-form {
     width: 50%;
@@ -1076,9 +1077,26 @@ form {
 @media (max-width: 750px) {
   .contact-form {
     flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .name-and-email {
+    flex-direction: column;
+  }
+  .name-and-email > input {
+    width: 80%;
+  }
+  .message {
+    width: 79%;
+  }
+  .aside-form {
+    width: 100%;
+  }
+  form {
+    width: 100%;
   }
   .aside-form > p {
-    display: none;
+    text-align: center;
   }
 }
 .team-section {

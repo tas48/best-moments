@@ -27,7 +27,7 @@ form{
   gap: 1vw;
 
   & > input{
-    // width: 22vw;
+    min-width: 22vw;
     height: 32px;
     border-radius: 8px;
     border: 2px solid $secondary;
@@ -36,7 +36,7 @@ form{
 }
 
 .message{
-  width: 47vw;
+  min-width: 47vw;
   height: 22vh;
   resize: none;
   border-radius: 8px;
@@ -82,15 +82,15 @@ form{
 
 @media (max-width: $tablet-landscape){
   .name-and-email{
-    flex-direction: column-reverse;
+    flex-direction: column;
     
     & > input{
-      width: 44vw;
+      min-width: 44vw;
     }
   }
 
   .message{
-    width: 43vw;
+    min-width: 43vw;
   }
 
   .aside-form{
@@ -110,9 +110,31 @@ form{
   
   .contact-form{
     flex-direction: column;
+    width: 100%;
+    margin: 0;
   }
-  
+
+  .name-and-email{
+    flex-direction: column;
+    
+    & > input{
+      width: 80%;
+    }
+  }
+
+  .message{
+    width: 79%;
+  }
+
+  .aside-form{
+    width: 100%;
+  }
+
+  form{
+    width: 100%;
+  }
+
   .aside-form > p{
-    display: none;
+    text-align: center;
   }    
 }

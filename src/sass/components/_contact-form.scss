@@ -76,7 +76,6 @@ form{
 }
 
 .phone{
-  background-color: red;
   margin: 0 auto;
 }
 
@@ -98,7 +97,8 @@ form{
   }
 
   form{
-    width: 50%;
+    width: 60%;
+    background-color: red;
   }
 
   .contact-links{
@@ -112,22 +112,35 @@ form{
     flex-direction: column;
     width: 100%;
     margin: 0;
+    padding-block: 5vh;
   }
 
   .name-and-email{
     flex-direction: column;
+    gap: 12px;
+    align-items: center;
     
     & > input{
       width: 80%;
     }
   }
 
+  .message-container{
+    text-align: center;
+  }
+
   .message{
     width: 79%;
+    align-items: center;
+
+    &:focus{
+      color: $primary;
+    }
   }
 
   .aside-form{
     width: 100%;
+    text-align: center;
   }
 
   form{
@@ -136,5 +149,6 @@ form{
 
   .aside-form > p{
     text-align: center;
+    margin-inline: 10%;
   }    
 }

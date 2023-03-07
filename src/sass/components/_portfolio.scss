@@ -14,6 +14,9 @@
 
 .projects-container{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2%;
   width: 100%;
   margin-top: 4vh;
@@ -21,11 +24,12 @@
 
 .project-card{
   background-color: $primary;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 10px;
-  // width: ;
+  max-width: 250px;
   height: 440px;
   text-align: center;
+  margin-bottom: 2vh;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
 
   & > h2{

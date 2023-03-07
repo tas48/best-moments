@@ -35,6 +35,10 @@ form{
   }
 }
 
+input:focus{
+  border-color: solid red;
+}
+
 .message{
   min-width: 47vw;
   height: 22vh;
@@ -98,7 +102,6 @@ form{
 
   form{
     width: 60%;
-    background-color: red;
   }
 
   .contact-links{

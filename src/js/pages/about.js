@@ -4,10 +4,12 @@ import currentPage from '../modules/current-page.js';
 import imageSlider from '../modules/image-slider.js';
 import toTop from '../modules/to-top.js';
 import currentYear from '../modules/current-year.js';
+import anchorScroll from '../modules/html-anchor-scroll.js';
 
 renderMenu();
 stickyNavbar();
 currentPage();
 imageSlider();
+anchorScroll();
 toTop();
 currentYear();

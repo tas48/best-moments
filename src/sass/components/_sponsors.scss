@@ -55,12 +55,22 @@
 @media (max-width: $tablet-landscape){
   .sponsors-container{
     flex-direction: column;
-    gap: 2vw;
+    gap: 4vw;
+  }
+
+  .sponsors{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sponsor-info{
+    max-width: 180px;
   }
 
   .sponsors-text{
     order: 0;
     width: 100%;
+    text-align: center;
 
     & > p{
       display: none;
@@ -74,12 +84,6 @@
   .sponsors{
     order: 1;
     width: 100%;
-  }
-
-  @media (max-width: $mobile){
-    .sponsors{
-      flex-direction: column;
-    }
   }
 }
 

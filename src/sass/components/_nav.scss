@@ -52,8 +52,9 @@ nav{
 }
 
 .current-page{
-  border-bottom: solid 2px $secondary;
-  padding-inline: 2px;
+  border-bottom: solid 3px $secondary;
+  border-radius: 3px;
+  padding-inline: 5px;
 }
 
 .sticky{

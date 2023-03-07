@@ -72,8 +72,9 @@ nav .nav-list li {
 }
 
 .current-page {
-  border-bottom: solid 2px #688aa5;
-  padding-inline: 2px;
+  border-bottom: solid 3px #688aa5;
+  border-radius: 3px;
+  padding-inline: 5px;
 }
 
 .sticky {
@@ -733,12 +734,14 @@ nav .nav-list li {
     margin-block: 10vh;
     gap: 20px;
   }
+  .testimony-title {
+    text-align: center;
+  }
   .testimony-title > h2 {
-    font-size: 22px;
+    font-size: 25px;
   }
   #t4,
-  #t5,
-  #t6 {
+  #t5 {
     display: none;
   }
 }
@@ -757,6 +760,7 @@ nav .nav-list li {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
+    text-align: center;
   }
   #t1 {
     grid-column-start: 1;
@@ -854,11 +858,19 @@ nav .nav-list li {
 @media (max-width: 900px) {
   .sponsors-container {
     flex-direction: column;
-    gap: 2vw;
+    gap: 4vw;
+  }
+  .sponsors {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sponsor-info {
+    max-width: 180px;
   }
   .sponsors-text {
     order: 0;
     width: 100%;
+    text-align: center;
   }
   .sponsors-text > p {
     display: none;
@@ -869,11 +881,6 @@ nav .nav-list li {
   .sponsors {
     order: 1;
     width: 100%;
-  }
-}
-@media (max-width: 900px) and (max-width: 599px) {
-  .sponsors {
-    flex-direction: column;
   }
 }
 footer {
@@ -1017,8 +1024,12 @@ form {
   min-width: 22vw;
   height: 32px;
   border-radius: 8px;
-  border: 2px solid #688aa5;
+  border: solid 2px #688aa5;
   padding-left: 10px;
+}
+.name-and-email > input:focus {
+  border: 2px solid #688aa5;
+  outline: none;
 }
 
 input:focus {
@@ -1038,6 +1049,24 @@ input:focus {
   position: absolute;
   top: 0;
   left: 0;
+}
+.message:focus {
+  border: 2px solid #688aa5;
+  outline: none;
+}
+
+.submit-btn-container {
+  text-align: end;
+}
+.submit-btn-container > button {
+  width: 20%;
+  height: 36px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid transparent;
+  background-color: #688aa5;
+  color: #f2f2f2;
+  cursor: pointer;
 }
 
 .contact-links {
@@ -1077,15 +1106,23 @@ input:focus {
   }
   .name-and-email > input {
     min-width: 44vw;
+    font-size: 0.9rem;
   }
   .message {
     min-width: 43vw;
+    font-size: 0.9rem;
   }
   .aside-form {
     width: 50%;
   }
   form {
     width: 60%;
+  }
+  .submit-btn-container {
+    width: 91%;
+  }
+  .submit-btn-container > button {
+    font-size: 0.9rem;
   }
   .contact-links {
     flex-direction: column;
@@ -1156,28 +1193,37 @@ input:focus {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2%;
+  gap: 3%;
   width: 100%;
-  margin-top: 4vh;
+  margin-top: 6vh;
 }
 
 .project-card {
   background-color: #f2f2f2;
   border-radius: 12px;
   padding: 10px;
-  max-width: 250px;
+  width: 320px;
   height: 440px;
   text-align: center;
   margin-bottom: 2vh;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+  transition: 0.5s;
 }
 .project-card > h2 {
   font-size: 1.3rem;
+}
+.project-card > p {
+  font-size: 0.9rem;
+  margin-inline: 10px;
 }
 .project-card > img {
   border-radius: 8px;
   width: 96%;
   height: 60%;
+}
+.project-card:hover {
+  transition: 0.5s;
+  transform: translateY(-8px);
 }
 
 .project-btn {
@@ -1185,16 +1231,21 @@ input:focus {
   border-radius: 20px;
   width: 73%;
   height: 8%;
+  text-align: center;
   border: solid 2px #59b96e;
-  margin: 0 auto;
   color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 0.9rem;
+}
+.project-btn:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .project-btn > img {
   width: 16px;
   height: 16px;
-}
-.project-btn > img:hover {
-  stroke: #59b96e;
+  margin-right: 5px;
 }
 
 .team-section {

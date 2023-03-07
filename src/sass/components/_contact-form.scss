@@ -30,8 +30,13 @@ form{
     min-width: 22vw;
     height: 32px;
     border-radius: 8px;
-    border: 2px solid $secondary;
+    border: solid 2px $secondary;
     padding-left: 10px;
+
+    &:focus{
+      border: 2px solid $secondary;
+      outline: none;
+    }
   }
 }
 
@@ -53,8 +58,27 @@ input:focus{
     top: 0; 
     left: 0;
   }
+
+  &:focus{
+    border: 2px solid $secondary;
+    outline: none;
+  }
 }
 
+.submit-btn-container{
+  text-align: end;
+
+  & > button{
+    width: 20%;
+    height: 36px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: $secondary;
+    color: $primary;
+    cursor: pointer;
+  }
+}
 
 .contact-links{
   margin-top: 3vh;
@@ -89,11 +113,13 @@ input:focus{
     
     & > input{
       min-width: 44vw;
+      font-size: 0.9rem;
     }
   }
 
   .message{
     min-width: 43vw;
+    font-size: 0.9rem;
   }
 
   .aside-form{
@@ -102,6 +128,14 @@ input:focus{
 
   form{
     width: 60%;
+  }
+
+  .submit-btn-container{
+    width: 91%;
+
+    & > button{
+      font-size: 0.9rem;
+    }
   }
 
   .contact-links{

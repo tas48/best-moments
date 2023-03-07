@@ -103,13 +103,17 @@
     gap: 20px;
   }
 
-  .testimony-title > h2{
-    font-size: 22px;
+  .testimony-title{
+    text-align: center;
+    
+    & > h2{
+      font-size: 25px;
+    }
   }
+   
 
   #t4,
-  #t5,
-  #t6{
+  #t5{
     display: none;
   }
 }
@@ -132,6 +136,8 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
+
+    text-align: center;
   }
 
 

@@ -13,6 +13,6 @@ stickyNavbar();
 currentPage();
 imageSlider();
 cardSlider();
-anchorScroll()
+
 toTop();
 currentYear();

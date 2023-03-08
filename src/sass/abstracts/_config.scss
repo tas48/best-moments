@@ -19,6 +19,13 @@ body{
   }
 }
 
+input,
+select,
+textarea,
+button{
+  font-family:inherit;
+}
+
 a[data-hs-anchor="true"] {   
   display: block; 
   position: relative; 

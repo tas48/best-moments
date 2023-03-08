@@ -1,0 +1,48 @@
+@use '../abstracts/' as *;
+
+.search{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search-wrapper{
+  display: flex;
+  @include flex-center;
+  height: 2rem;
+  border-radius: 20px;
+  border: 2px solid $secondary;
+  padding-inline: 0.6rem;
+  padding-block: 0.2rem;
+
+}
+
+.search-bar{
+  background-color: transparent;
+  outline: transparent;
+  border-color: transparent;
+  width: 84%;
+  height: 100%;
+  color: $text-color;
+ 
+  &::placeholder{
+    font-size: 0.9rem;
+  }
+}
+
+.search-btn{
+  background-color: transparent;
+  outline: transparent;
+  border-color: transparent;
+
+  & > img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: $mobile){
+  .search{
+    width: 42vw;
+  }
+
+}

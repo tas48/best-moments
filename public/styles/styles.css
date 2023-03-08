@@ -1289,7 +1289,7 @@ input:focus {
   font-size: 0.9rem;
 }
 
-main {
+.not-found-container {
   display: flex;
   justify-content: center;
   align-items: center;

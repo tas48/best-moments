@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-main{
+.not-found-container{
   @include flex-center;
 }
 

@@ -1340,6 +1340,35 @@ input:focus {
     width: 42vw;
   }
 }
+.categories {
+  width: 30%;
+  height: 80vh;
+  position: sticky;
+  padding: 0.2rem;
+}
+
+.categories-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-text {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 2vh;
+}
+.categories-text > h2 {
+  font-size: 1rem;
+}
+
+.services-layout {
+  display: flex;
+  margin-inline: 7vw;
+}
+
 .not-found-container {
   display: flex;
   justify-content: center;

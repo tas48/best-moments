@@ -1,2 +1,8 @@
 @use '../components/service-card';
 @use '../components/search-bar';
+@use '../components/categories';
+
+.services-layout{
+  display: flex;
+  margin-inline: 7vw;
+}

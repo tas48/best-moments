@@ -1,6 +1,6 @@
-@use '../components/service-card';
 @use '../components/search-bar';
 @use '../components/categories';
+@use '../components/service-grid';
 
 .services-layout{
   display: flex;

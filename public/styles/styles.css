@@ -1343,7 +1343,6 @@ input:focus {
 .categories {
   width: 30%;
   height: 80vh;
-  position: sticky;
   padding: 0.2rem;
 }
 
@@ -1362,6 +1361,33 @@ input:focus {
 }
 .categories-text > h2 {
   font-size: 1rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: 3vw 3vh;
+  row-gap: 3vh;
+  column-gap: 3vw;
+}
+
+.service {
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid #688aa5;
+  align-items: center;
+  padding-inline: 2%;
+  gap: 2%;
+}
+.service > img {
+  width: 40%;
+  border-radius: 10px;
+  height: 90%;
+}
+
+.service-info {
+  width: 80%;
 }
 
 .services-layout {

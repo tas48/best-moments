@@ -1344,6 +1344,10 @@ input:focus {
   width: 30%;
   height: 80vh;
   padding: 0.2rem;
+  position: fixed;
+  z-index: 1;
+  top: 12vh;
+  left: 4vw;
 }
 
 .categories-wrapper {
@@ -1365,29 +1369,30 @@ input:focus {
 
 .service-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   margin: 3vw 3vh;
   row-gap: 3vh;
   column-gap: 3vw;
+  z-index: 99;
 }
 
 .service {
-  display: flex;
+  padding: 6%;
   border-radius: 20px;
   border: 2px solid #688aa5;
   align-items: center;
   padding-inline: 2%;
-  gap: 2%;
+  text-align: center;
 }
 .service > img {
-  width: 40%;
+  width: 3rem;
+  height: 3rem;
   border-radius: 10px;
-  height: 90%;
 }
 
-.service-info {
-  width: 80%;
+.service-info > p {
+  margin-inline: 1rem;
 }
 
 .services-layout {

@@ -1,0 +1,45 @@
+@use '../abstracts/' as *;
+
+.newsletter-form{
+  display: flex;
+  gap: 2%;
+  @include flex-center;
+  margin-inline: 6%;
+  padding-block: 3%;
+  margin-bottom: 4%;  
+}
+
+.text-wrapper{
+  width: 40%;
+  @include aside-text($accent-color);
+}
+
+.news-wrapper{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.form-input{
+  width: 20vw;
+  height: 32px;
+  border-radius: 8px;
+  border: solid 2px $secondary;
+  padding-left: 10px;
+
+    &:focus{
+      border: 2px solid $secondary;
+      outline: none;
+    }
+}
+
+.sub-btn{
+  width: 12rem;
+  height: 32px;
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid transparent;
+  background-color: $secondary;
+  color: $primary;
+  cursor: pointer;
+}

@@ -1292,11 +1292,13 @@ input:focus {
 }
 
 .form-input {
-  width: 20vw;
+  width: 18vw;
   height: 32px;
   border-radius: 8px;
   border: solid 2px #688aa5;
   padding-left: 10px;
+  font-size: 0.9rem;
+  color: #2e2e2e;
 }
 .form-input:focus {
   border: 2px solid #688aa5;
@@ -1304,7 +1306,7 @@ input:focus {
 }
 
 .sub-btn {
-  width: 12rem;
+  width: 14rem;
   height: 32px;
   border-radius: 30px;
   outline: none;
@@ -1312,8 +1314,35 @@ input:focus {
   background-color: #688aa5;
   color: #f2f2f2;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
+@media (max-width: 900px) {
+  .newsletter-form {
+    flex-direction: column;
+    margin-block: 8%;
+  }
+  .text-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .text-wrapper > p {
+    margin-inline: 4%;
+  }
+  .news-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .form-input {
+    width: 90%;
+  }
+}
+@media (max-width: 599px) {
+  .news-wrapper {
+    flex-wrap: wrap;
+  }
+}
 .team-section {
   margin-block: 4%;
 }

@@ -17,15 +17,16 @@
 .news-wrapper{
   display: flex;
   flex-direction: row;
-
 }
 
 .form-input{
-  width: 20vw;
+  width: 18vw;
   height: 32px;
   border-radius: 8px;
   border: solid 2px $secondary;
   padding-left: 10px;
+  font-size: 0.9rem;
+  color: $text-color;
 
     &:focus{
       border: 2px solid $secondary;
@@ -34,7 +35,7 @@
 }
 
 .sub-btn{
-  width: 12rem;
+  width: 14rem;
   height: 32px;
   border-radius: 30px;
   outline: none;
@@ -42,4 +43,37 @@
   background-color: $secondary;
   color: $primary;
   cursor: pointer;
+  font-size: 0.9rem;
+}
+
+@media (max-width: $tablet-landscape){
+  .newsletter-form{
+    flex-direction: column;
+    margin-block: 8%;
+  }
+
+  .text-wrapper{
+    width: 100%;
+    text-align: center;
+    
+    & > p {
+      margin-inline: 4%;
+    }
+  }
+
+  .news-wrapper{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-input{
+    width: 90%;
+  }
+}
+
+@media (max-width: $mobile){
+  .news-wrapper{
+    flex-wrap: wrap;
+  }
 }

@@ -123,3 +123,22 @@
     margin-top: -10.6rem;
   }
 }
+
+
+@media (min-width: 1366px) {
+  .slider{
+    height: 23rem;
+    background-color: red;
+    width: 30vw;
+  }
+
+  .navigation-auto{
+    margin-top: 24rem;
+  }
+
+  .manual-navigation{
+    margin-top: -14.1rem;
+    width: 540px;
+  }
+}
+

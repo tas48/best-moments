@@ -285,6 +285,20 @@ nav .nav-list li {
     margin-top: -10.6rem;
   }
 }
+@media (min-width: 1366px) {
+  .slider {
+    height: 23rem;
+    background-color: red;
+    width: 30vw;
+  }
+  .navigation-auto {
+    margin-top: 24rem;
+  }
+  .manual-navigation {
+    margin-top: -14.1rem;
+    width: 540px;
+  }
+}
 .banner {
   display: flex;
   padding: 2vw 8vw 0vw 9vw;
@@ -398,6 +412,11 @@ nav .nav-list li {
   }
   .call-to-action > div {
     text-align: center;
+  }
+}
+@media (min-width: 1366px) {
+  .banner {
+    padding-inline: 15%;
   }
 }
 .card-slider-container {
@@ -1432,8 +1451,6 @@ input:focus {
   width: 30%;
   height: 80vh;
   padding: 0.2rem;
-  position: fixed;
-  z-index: 1;
   top: 12vh;
   left: 4vw;
 }
@@ -1462,7 +1479,6 @@ input:focus {
   margin: 3vw 3vh;
   row-gap: 3vh;
   column-gap: 3vw;
-  z-index: 99;
 }
 
 .service {

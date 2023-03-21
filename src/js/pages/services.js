@@ -1,6 +1,5 @@
 import currentPage from '../modules/current-page.js';
-import anchorScroll from '../modules/html-anchor-scroll.js';
+import searchBar from '../modules/search-bar.js';
 
-
-anchorScroll();
 currentPage();
+searchBar();

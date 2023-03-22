@@ -171,6 +171,11 @@ nav .nav-list li {
     max-width: 136px;
   }
 }
+@media (min-width: 1400px) {
+  nav {
+    padding-inline: 1%;
+  }
+}
 .slider {
   width: 42vw;
   height: 62vh;
@@ -205,11 +210,11 @@ nav .nav-list li {
   justify-content: center;
 }
 .navigation-auto div {
-  width: 18px;
+  width: 22px;
   padding: 3px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #d1e0e0;
+  background-color: #c9d1d1;
   transition-duration: 0.8s;
 }
 .navigation-auto div:not(:last-child) {
@@ -285,18 +290,19 @@ nav .nav-list li {
     margin-top: -10.6rem;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1400px) {
   .slider {
     height: 23rem;
-    background-color: red;
     width: 30vw;
   }
   .navigation-auto {
+    width: 580px;
     margin-top: 24rem;
   }
   .manual-navigation {
-    margin-top: -14.1rem;
+    margin-top: -14rem;
     width: 540px;
+    height: 20px;
   }
 }
 .banner {
@@ -412,11 +418,6 @@ nav .nav-list li {
   }
   .call-to-action > div {
     text-align: center;
-  }
-}
-@media (min-width: 1366px) {
-  .banner {
-    padding-inline: 15%;
   }
 }
 .card-slider-container {
@@ -650,6 +651,11 @@ nav .nav-list li {
     order: 2;
   }
 }
+@media (min-width: 1400px) {
+  .services-container {
+    padding-inline: 3%;
+  }
+}
 .testimony-container {
   display: grid;
   grid-template-columns: 0.5fr 0.4fr 0.6fr;
@@ -815,6 +821,11 @@ nav .nav-list li {
   #t5,
   #t6 {
     display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .testimony-container {
+    padding-inline: 8%;
   }
 }
 .sponsors-container {
@@ -1360,6 +1371,11 @@ input:focus {
 @media (max-width: 599px) {
   .news-wrapper {
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 1400px) {
+  .newsletter-form {
+    padding-inline: 2%;
   }
 }
 .team-section {

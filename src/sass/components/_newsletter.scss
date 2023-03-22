@@ -77,3 +77,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 1400px){
+  .newsletter-form{
+    padding-inline: 2%;
+  }
+}

@@ -36,11 +36,11 @@
   justify-content: center;
 
   & div{
-    width: 18px;
+    width: 22px;
     padding: 3px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #d1e0e0;
+    background-color: #c9d1d1;
     transition-duration: 0.8s;
   }
 
@@ -48,6 +48,7 @@
     margin-right: 12px;
   } 
 }
+
  
 #radio1:checked ~ .navigation-auto > .auto-btn1{
   background-color: $secondary;
@@ -125,20 +126,21 @@
 }
 
 
-@media (min-width: 1366px) {
+@media (min-width: 1400px) {
   .slider{
     height: 23rem;
-    background-color: red;
     width: 30vw;
   }
 
   .navigation-auto{
-    margin-top: 24rem;
-  }
+    width: 580px;
+    margin-top: 24rem; 
+}
 
   .manual-navigation{
-    margin-top: -14.1rem;
+    margin-top: -14rem;
     width: 540px;
+    height: 20px;
   }
 }
 

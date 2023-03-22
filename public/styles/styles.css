@@ -1426,7 +1426,6 @@ input:focus {
 
 .search-wrapper {
   display: flex;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 2rem;
@@ -1463,6 +1462,12 @@ input:focus {
     width: 42vw;
   }
 }
+.test {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .categories {
   width: 30%;
   height: 80vh;

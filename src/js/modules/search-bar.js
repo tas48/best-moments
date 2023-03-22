@@ -1,25 +1,33 @@
 function searchBar(){
-  const servicesList = document.querySelectorAll('.service-info > h2');
+  const servicesTitle = document.querySelectorAll('.service-info > h2');
+  const serviceCard = document.querySelectorAll('.service');
   let submitInput = document.querySelector('.search-bar');
-  // searchInput = searchInput.toLowerCase();
 
-  submitInput.addEventListener('click', () => {
-    searchInput.value = searchInput.value;
+
+  submitInput.addEventListener('keyup', () =>{
     
-    servicesList.forEach(element => {
-      if(element.innerHTML.toLowerCase().includes(searchInput)){
-      console.log('asd'); 
-    }
-
+    servicesTitle.forEach(el => {
+      if(el.innerText.toLowerCase() == submitInput.value.toLowerCase()){
+        
+      } 
+      else {
+        serviceCard.forEach(card => {
+          card.style.display = "none";
+        })
+        
+      }
     });
+
   });
+  
+  
+  
+    
 
 
+  
 
 }
 
 export default searchBar;
 
-function returnN(){
-  return 1+1;
-}
